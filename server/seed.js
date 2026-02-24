@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 const db = new sqlite3.Database("./database.db");
 
 async function seed() {
-  const email = "JLabs@example.com";
+  const email = "JLabs@example.com"; //email and password
   const password = "JLabs@123";
 
   const hashedPassword = await bcrypt.hash(password, 10);

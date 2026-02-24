@@ -87,6 +87,7 @@ function Login() {
         >
           Log In
         </button>
+        <p className="mt-4">Credentials is in server/seed.js</p>
       </div>
     </>
   );

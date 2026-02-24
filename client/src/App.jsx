@@ -27,9 +27,7 @@ function Home() {
     }
   };
 
-  // Fetch geo info for a user input IP
   const fetchIPGeo = async (ip = "") => {
-    // Treat empty string or "me" as current user IP
     const targetIP = ip.trim() === "" || ip === "me" ? "" : ip;
 
     if (targetIP && !isValidIP(targetIP)) {
